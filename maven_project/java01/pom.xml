@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--maven的版本号，目前3.0以上的maven工具，生成的都是4.0版本的模型-->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--包名，全小写。域名倒写例如“com.Java”或者域名倒写+项目名例如“com.Java.test”-->
+    <groupId>org.example</groupId>
+    <!--工程名-->
+    <artifactId>java01</artifactId>
+    <!--工程版本号，版本号都是3位是1.0.0，SNAPSHOT：开发版、RELEASE：完成版-->
+    <version>1.0-SNAPSHOT</version>
+    <!--工程打包方式，可以 jar、war、rar、ear、pom，默认是 jar-->
+    <packaging>jar</packaging>
+
+    <name>java01</name>
+    <url>http://maven.apache.org</url>
+
+    <!--全局属性的配置-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <!--依赖管理-->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
